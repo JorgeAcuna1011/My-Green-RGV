@@ -6,14 +6,15 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.banner{
-  width: 100%;
-  height: 200px;
-  background-color: #4CAF50;
-  color: white;
+h1 {
   text-align: center;
-  line-height: 200px;
-  font-size: 24px;
+  font-family: 'Modak', cursive;
+  font-weight: 200;
+  color: #005216;
+  font-size: 90px;
+  margin: 0;
+  background-color: #4CAF50;
+  
 }
 
 .login-container {
@@ -58,7 +59,6 @@ body {
   color: black;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -77,8 +77,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .title {
   margin: 0;
@@ -143,6 +141,35 @@ main {
   font-size: 1.25rem;
   line-height: 1.5;
 }
+/* Footer base styles */
+footer.contact-info {
+  background-color: #333;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer heading (Contact Us) */
+footer.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(162, 226, 66);
+}
+
+/* Paragraphs in footer */
+footer.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media (max-width: 600px) {
   .grid {
