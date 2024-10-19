@@ -27,6 +27,25 @@ body {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #333; /* Change color as needed */
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 a {
   color: inherit;
   text-decoration: none;
