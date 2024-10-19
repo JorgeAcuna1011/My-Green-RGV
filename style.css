@@ -16,6 +16,17 @@ body {
   font-size: 24px;
 }
 
+.login-container {
+  position: absolute;
+  right: 20px; /* Adjust this value to change the distance from the right edge */
+  top: 20px; /* Adjust this value to change the distance from the top edge */
+  width: 250px; /* Adjust the width as needed */
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 a {
   color: inherit;
   text-decoration: none;
