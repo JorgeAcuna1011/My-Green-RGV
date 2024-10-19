@@ -17,24 +17,36 @@ body {
 }
 
 .login-container {
-  position: absolute;
-  right: 20px; /* Adjust this value to change the distance from the right edge */
-  top: 20px; /* Adjust this value to change the distance from the top edge */
-  width: 250px; /* Adjust the width as needed */
-  padding: 15px;
+  display: none; 
   background-color: #f9f9f9;
+  padding: 15px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.btn {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: #333; /* Change color as needed */
+  display: flex;
+  justify-content: center; 
+  background-color: #005216;
 }
 
 .navbar a {
-  float: left;
-  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -45,6 +57,7 @@ body {
   background-color: #ddd;
   color: black;
 }
+
 
 a {
   color: inherit;
@@ -64,6 +77,8 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .title {
   margin: 0;
