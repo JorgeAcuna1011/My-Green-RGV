@@ -1,3 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    alert('Welcome to my website!');
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     alert('Welcome to my website!');
+// });
