@@ -229,13 +229,13 @@ footer p {
   display: block;
 }
 
-.services-container {
+.resources-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.service1 {
+.resources1 {
   background-color: white;
   margin: 20px 0;
   padding: 15px;
@@ -244,13 +244,18 @@ footer p {
   width: 100%;
 }
 
-.service1 h2 {
+.resources1 h2 {
   margin-top: 0;
   color: #333;
+  transition: color 0.3s; /* Smooth transition */
 }
 
-.service1 p {
-  color: #666;
+.resources1 h2:hover {
+  color: #4CAF50; /* Nice green color */
+}
+
+.resources1 p {
+  color: #666
 }
 
 /* About section styling */
