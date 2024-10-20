@@ -141,6 +141,14 @@ main {
   font-size: 1.25rem;
   line-height: 1.5;
 }
+
+.box_map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 /* Footer base styles */
 footer.contact-info {
   background-color: #333;
@@ -176,4 +184,12 @@ footer.contact-info p {
     width: 100%;
     flex-direction: column;
   }
+}
+
+#map {
+  height: 100px;
+  width: 100px;
+  padding: 100px;
+  margin: auto;
+  display: block;
 }
