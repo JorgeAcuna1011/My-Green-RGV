@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <title> Contact Us </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </div>
-
-    <head>
-        <title> Contact US </title>
-    </head>
-    <body>
-        <h2> Contact Us </h2>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
         <form action="mailto:example@example.com" method="post" enctype="text/plain">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br><br>
@@ -25,7 +30,7 @@
             <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
             
             <input type="submit" value="Send">
-            </form>
-        
-    </body>
+        </form>
+    </div>
+</body>
 </html>
