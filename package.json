@@ -1,5 +1,13 @@
 {
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "My deployed site",
+  "main": "index.js",
+  "scripts": {
+      "start": "node server.js"
+  },
   "dependencies": {
-    "express": "^4.21.1"
-  }
+      "express": "^4.17.1"
+  },
+  "license": "MyGreenRGV"
 }
