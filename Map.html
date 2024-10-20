@@ -38,6 +38,132 @@
     title="Pharr City Recycling Center"
     id="marker3"
     ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.252750,-98.145110"
+    title="Diaz Recycle LLC"
+    id="marker4"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.335590,-98.172112"
+    title="Homero's Junkyard"
+    id="marker5"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.193650,-98.168180"
+    title="Master Fibers Inc"
+    id="marker6"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.1423104,-97.9042304"
+    title="San Juan Recycle Center"
+    id="marker7"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.2676745,-98.204541"
+    title="EcoATM"
+    id="marker8"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.199752,-98.253825"
+    title="Tex-Mex Recycling"
+    id="marker9"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.207594,-98.250046"
+    title="EDH International"
+    id="marker10"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.208534,-98.2586358"
+    title="Tesoro Metal Recycling"
+    id="marker11"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.2460899,-98.2634715"
+    title="City of McAllen Recycling Center"
+    id="marker12"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.1544533,-98.2952786"
+    title="Valley Steel Recycling"
+    id="marker13"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.2158871,-98.1057882"
+    title="North Tower Recycling"
+    id="marker14"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.1761857,-98.0811177"
+    title="All Valley Metal Recycling, LLC"
+    id="marker16"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.1554515,-98.1159028"
+    title="Gama Recycling"
+    id="marker17"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.193251,-98.133763"
+    title="Alamo Metal Recycling"
+    id="marker18"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.15491,-98.022007"
+    title="G3 Scrap Metal"
+    id="marker19"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.281268,-98.314488"
+    title="R G Recycling Center"
+    id="marker20"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.2426538,-98.3606743"
+    title="Mayal Recycling"
+    id="marker21"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.302314,-98.3355907"
+    title="Alton Scrap Metal (Metal Recycling)"
+    id="marker22"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.324989,-98.373504"
+    title="Rocha's Recycling"
+    id="marker23"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.325336,-98.376677"
+    title="Trevino's Recycling"
+    id="marker24"
+    ></gmp-advanced-marker>
+
+    <gmp-advanced-marker
+    position="26.260148,-98.331635"
+    title="Mission Metal Recycling"
+    id="marker25"
+    ></gmp-advanced-marker>
   </gmp-map>
 
 </div>
@@ -79,18 +205,44 @@
         }
         
         // Setup click events for markers
-        const marker1 = document.getElementById('marker1');
-        const marker2 = document.getElementById('marker2');
-        const marker3 = document.getElementById('marker3');
+        const markers = [
+          { id: 'marker1', title: "Edinburg Recycling & Educational Center", content: "This is a recycling center located in Edinburg, TX." },
+          { id: 'marker2', title: "Ecorec Rio Grande Valley", content: "This is a recycling center located in the Rio Grande Valley." },
+          { id: 'marker3', title: "Pharr City Recycling Center", content: "This is a recycling center located in Pharr, TX." },
+          { id: 'marker4', title: "McAllen Recycling Center", content: "This is a recycling center located in McAllen, TX." },
+          { id: 'marker5', title: "Mission Recycling Center", content: "This is a recycling center located in Mission, TX." },
+          { id: 'marker6', title: "Harlingen Recycling Center", content: "This is a recycling center located in Harlingen, TX." },
+          { id: 'marker7', title: "Brownsville Recycling Center", content: "This is a recycling center located in Brownsville, TX." },
+          { id: 'marker8', title: "Weslaco Recycling Center", content: "This is a recycling center located in Weslaco, TX." },
+          { id: 'marker9', title: "San Benito Recycling Center", content: "This is a recycling center located in San Benito, TX." },
+          { id: 'marker10', title: "Raymondville Recycling Center", content: "This is a recycling center located in Raymondville, TX." },
+          { id: 'marker11', title: "Donna Recycling Center", content: "This is a recycling center located in Donna, TX." },
+          { id: 'marker12', title: "Alamo Recycling Center", content: "This is a recycling center located in Alamo, TX." },
+          { id: 'marker13', title: "Mercedes Recycling Center", content: "This is a recycling center located in Mercedes, TX." },
+          { id: 'marker14', title: "Rio Hondo Recycling Center", content: "This is a recycling center located in Rio Hondo, TX." },
+          { id: 'marker15', title: "La Feria Recycling Center", content: "This is a recycling center located in La Feria, TX." },
+          { id: 'marker16', title: "Santa Rosa Recycling Center", content: "This is a recycling center located in Santa Rosa, TX." },
+          { id: 'marker17', title: "Lyford Recycling Center", content: "This is a recycling center located in Lyford, TX." },
+          { id: 'marker18', title: "Hidalgo Recycling Center", content: "This is a recycling center located in Hidalgo, TX." },
+          { id: 'marker19', title: "Palmview Recycling Center", content: "This is a recycling center located in Palmview, TX." },
+          { id: 'marker20', title: "Penitas Recycling Center", content: "This is a recycling center located in Penitas, TX." },
+          { id: 'marker21', title: "La Joya Recycling Center", content: "This is a recycling center located in La Joya, TX." },
+          { id: 'marker22', title: "Sullivan City Recycling Center", content: "This is a recycling center located in Sullivan City, TX." },
+          { id: 'marker23', title: "Roma Recycling Center", content: "This is a recycling center located in Roma, TX." },
+          { id: 'marker24', title: "Rio Grande City Recycling Center", content: "This is a recycling center located in Rio Grande City, TX." },
+          { id: 'marker25', title: "Starr County Recycling Center", content: "This is a recycling center located in Starr County, TX." }
+        ];
         
-        setupMarkerClickEvent(marker1, "Edinburg Recycling & Educational Center", "This is a recycling center located in Edinburg, TX.");
-        setupMarkerClickEvent(marker2, "Ecorec Rio Grande Valley", "This is a recycling center located in the Rio Grande Valley.");
-        setupMarkerClickEvent(marker3, "Pharr City Recycling Center", "This is a recycling center located in Pharr, TX.");
+        markers.forEach(marker => {
+          const markerElement = document.getElementById(marker.id);
+          if (markerElement) {
+            setupMarkerClickEvent(markerElement, marker.title, marker.content);
+          }
+        });
+      
       });
       
-      
-      
-      </script>
+</script>
 
 <style>
   /* Styling for the sliding window */
