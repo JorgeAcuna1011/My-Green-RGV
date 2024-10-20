@@ -14,46 +14,46 @@
 
   <button class="btn" onclick="window.location.href='index.html'">Back</button>
   <div class="box_map" style="padding: 20px; border: 0px solid #ccc;">
-
+    
     <gmp-map
-      center="26.278419,-98.183441"
-      zoom="11"
-      map-id="Edinburg, TX"
-      style="height: 400px; width: 100%;"
+    center="26.278419,-98.183441"
+    zoom="11"
+    map-id="Edinburg, TX"
+    style="height: 400px; width: 100%;"
     >
-      <gmp-advanced-marker
-        position="26.273069,-98.169701"
-        title="Edinburg Recycling & Educational Center"
-        id="marker1"
-      ></gmp-advanced-marker>
+    <gmp-advanced-marker
+    position="26.273069,-98.169701"
+    title="Edinburg Recycling & Educational Center"
+    id="marker1"
+    ></gmp-advanced-marker>
+    
+    <gmp-advanced-marker
+    position="26.337290,-98.160540"
+    title="Ecorec Rio Grande Valley"
+    id="marker2"
+    ></gmp-advanced-marker>
+    
+    <gmp-advanced-marker
+    position="26.213540,-98.195380"
+    title="Pharr City Recycling Center"
+    id="marker3"
+    ></gmp-advanced-marker>
+  </gmp-map>
 
-      <gmp-advanced-marker
-        position="26.337290,-98.160540"
-        title="Ecorec Rio Grande Valley"
-        id="marker2"
-      ></gmp-advanced-marker>
-
-      <gmp-advanced-marker
-        position="26.213540,-98.195380"
-        title="Pharr City Recycling Center"
-        id="marker3"
-      ></gmp-advanced-marker>
-    </gmp-map>
-
-  </div>
+</div>
 
   <div id="info-window" class="slide-window">
     <h2 id="window-title">Marker Info</h2>
     <p id="window-content">More details about the marker.</p>
     <button id="close-window">Close</button>
   </div>
-
-    <!-- Include the Google Maps JavaScript API -->
-    <script
+  
+  <!-- Include the Google Maps JavaScript API -->
+  <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
       defer
     ></script>
-
+    
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         // Reference to the sliding window
@@ -61,12 +61,12 @@
         const windowTitle = document.getElementById('window-title');
         const windowContent = document.getElementById('window-content');
         const closeWindowBtn = document.getElementById('close-window');
-
+        
         // Close sliding window
         closeWindowBtn.addEventListener('click', function() {
           infoWindow.classList.remove('open');
         });
-
+        
         // Function to setup marker click event
         function setupMarkerClickEvent(markerElement, title, content) {
           markerElement.addEventListener('click', function () {
@@ -77,37 +77,47 @@
             infoWindow.classList.add('open');
           });
         }
-
+        
         // Setup click events for markers
         const marker1 = document.getElementById('marker1');
         const marker2 = document.getElementById('marker2');
         const marker3 = document.getElementById('marker3');
-
+        
         setupMarkerClickEvent(marker1, "Edinburg Recycling & Educational Center", "This is a recycling center located in Edinburg, TX.");
         setupMarkerClickEvent(marker2, "Ecorec Rio Grande Valley", "This is a recycling center located in the Rio Grande Valley.");
         setupMarkerClickEvent(marker3, "Pharr City Recycling Center", "This is a recycling center located in Pharr, TX.");
       });
-    </script>
+      
+      
+      
+      </script>
 
-    <style>
-      /* Styling for the sliding window */
-      .slide-window {
-        position: fixed;
-        top: 0;
-        right: -300px; /* Hidden off-screen initially */
-        width: 300px;
-        height: 100%;
-        background-color: white;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-        transition: right 0.3s ease; /* Smooth sliding */
-        padding: 20px;
-        z-index: 1000;
-      }
+<style>
+  /* Styling for the sliding window */
+  .slide-window {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden off-screen initially */
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease; /* Smooth sliding */
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .slide-window.open {
+    right: 0; /* Slide into view */
+  }
+  </style>
 
-      .slide-window.open {
-        right: 0; /* Slide into view */
-      }
-    </style>
+<footer class="contact-info">
+  <h2>Contact Us</h2>
+  <p>Phone:956-555-5555</p>
+  <p>Email: mygreenrgv@recycle.com</p>
+</footer>
+
 </body>
 
 </html>

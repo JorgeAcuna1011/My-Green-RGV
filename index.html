@@ -32,7 +32,6 @@
 </script>
 
 <button class="btn" onclick="toggleLogin()">Sign In</button>
-<button class="btn" onclick="window.location.href='Map.html'">Find Map</button>
 
 <div class="login-container" id="loginContainer">
 <h2>Sign In</h2>
@@ -45,33 +44,44 @@
 </form>
 </div>
 
+
+
 <body>
   <main>
-    
-    <p class="description">Find Your Nearest Recycling Center!
+    <div class="carousel">
+      <img class="carousel-image" src="https://cdn.britannica.com/40/93540-050-48FF9C9E/items-recycling-centre.jpg" alt="Image 1">
+      <img class="carousel-image" src="https://media.istockphoto.com/id/670719454/photo/group-of-kids-school-volunteer-charity-environment.jpg?s=612x612&w=0&k=20&c=AC081NhGoX5o4yEZQJPmo6n698bS7EHiY1h7XjMZrsc=" alt="Image 2">
+      <img class="carousel-image" src="https://media.istockphoto.com/id/1323094421/photo/african-american-young-woman-recycling-garbage-sustainability-concept.jpg?s=612x612&w=0&k=20&c=r7JgS_cObti0lw-vXxZj__GUhADLIvc5AukBTfRStJk=" alt="Image 3">
+    </div>
+    <p class="description">Our goal is to make the RGV a cleaner place to live in
       <!-- <code class="code">index.html</code>. The webview will auto-refresh as you edit! (See <code 
         class="code">README.md</code> if you want to
       disable auto-refresh.) -->
     </p>
 
     <section class="grid">
-      <a href="https://cityofedinburg.com/departments/solid_waste_management_landfill/recycling.php" class='card'>
-        <h2>Learn &rarr;</h2>
-        <p>Find local Recycling Centers.</p>
+      <a href="Map.html" class='card'>
+        <h2>Find Your Nearest Recycling Center &rarr;</h2>
       </a>
 
-      <a href="https://docs.replit.com/category/deployments" class='card'>
-        <h2>Deploy &rarr;</h2>
-        <p>
-          After you are happy with this app, deploy it on Replit!
-        </p>
+      <a href="https://www.youtube.com/watch?v=fdPZWvOUmX0" class='card'>
+        <h2>Learn how you can do your part in the valley &rarr;</h2>
       </a>
     </section>
   </main>
 
-  <script type="module" src="script.js"></script>
+  <script>
+        let currentIndex = 0;
+    const images = document.querySelectorAll('.carousel-image');
 
-   <script src="app.js"></script> <!-- Link to JavaScript file -->
+    function showNextImage() {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.display = 'block';
+    }
+
+    setInterval(showNextImage, 3000); // Change image every 3 seconds
+  </script>
 
    <footer class="contact-info">
      <h2>Contact Us</h2>
