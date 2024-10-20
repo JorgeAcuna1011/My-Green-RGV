@@ -143,6 +143,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+  
 }
 
 .card {
@@ -162,6 +163,7 @@ main {
 .card:active {
   color: #005216;
   border-color: #4CAF50;
+  transform: scale(1.2);
 }
 
 .card h2 {
